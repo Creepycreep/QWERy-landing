@@ -1,0 +1,374 @@
+$black: #000
+$white: #fff
+$transparent: rgba(0, 0, 0, 0)
+$light-orange: #FFC178
+$yellow: #FBD784
+$orange: #FFA343
+$beige: #FFD1A0
+
+@font-face
+  font-family: 'fa'
+  src: url('../fontawesome/webfonts/fa-solid-900.ttf')
+  font-style: normal
+  font-weight: 900
+
+.main
+  background-color: $black
+  font-family: 'Open sans', sans-serif
+  position: relative
+  *
+    margin: 0
+    padding: 0
+    font-size: 18px
+    color: $white
+  a
+    text-decoration: none
+    color: inherit
+    &:hover
+      text-decoration: underline
+
+.container
+  max-width: 1460px
+  margin: 0 auto
+  padding: 0 15px
+
+.heading-mini
+  font-weight: 700
+  text-transform: uppercase
+  letter-spacing: 6px
+
+  position: relative
+  padding-left: 104px
+  &::before
+    position: absolute
+    content: ""
+
+    top: 50%
+    left: 0
+    border-bottom: 2px solid
+    width: 72px
+
+div .read-more
+  color: $yellow
+  font-weight: 700
+  &::after
+    margin-left: 10px
+    content: "\f178"
+    font-family: "fa"
+    font-size: 20px
+
+.header
+  padding-top: 60px
+  .bg
+    position: absolute
+    top: 0
+    left: 0
+
+    width: 100%
+    height: 1573px
+
+    background-image: url(../img/background.png)
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+  .container
+    position: relative
+    max-width: 1760px
+  &-nav
+    margin-bottom: 195px
+
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__logo
+      font-size: 24px
+      font-weight: 700
+    &-items
+      width: 350px
+
+      display: flex
+      justify-content: space-between
+
+      list-style-type: none
+      font-weight: 600
+    &-search
+      font-size: 17px
+      &__input
+        margin-left: 18px
+        width: 70px
+
+        background-color: $transparent
+        border: none
+
+        font-size: 17px
+        font-weight: 400
+        &::-webkit-search-decoration,
+        &::-webkit-search-cancel-button,
+        &::-webkit-search-results-button,
+        &::-webkit-search-results-decoration
+          display: none
+        &:focus
+          outline: 0
+        &::placeholder
+          font-size: 17px
+          color: $white
+  &-links
+    position: absolute
+    top: 50%
+
+    list-style: none
+
+    font-weight: 600
+    li
+      margin-bottom: 25px
+    &__txt
+      //transform: rotate(90deg)
+      writing-mode: vertical-rl
+  &-headings
+    max-width: 860px
+
+    margin: 0 auto
+    &__subheading
+      color: $light-orange
+
+      margin-bottom: 32px
+    &__heading
+      font-size: 88px
+      font-weight: 400
+      line-height: 100px
+
+      margin-bottom: 125px
+      .bold
+        font-weight: 700
+        font-size: 96px
+  &__btn
+    display: block
+    text-align: center
+
+    font-weight: 600
+
+    background-color: $transparent
+    border: none
+
+    cursor: pointer
+    i
+      margin-left: 10px
+
+.nusa
+  padding-top: 730px
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-text
+    max-width: 630px
+    &__subheading
+      color: $yellow
+
+      margin-bottom: 27px
+    &__heading
+      font-size: 64px
+      font-weight: 700
+
+      width: 80%
+      margin-bottom: 27px
+    &__text
+      font-weight: 600
+      line-height: 180%
+
+      margin-bottom: 27px
+
+.bromo
+  padding-top: 250px
+  .container
+
+    background-image: url(../img/image2.png)
+    background-repeat: no-repeat
+    background-position: center
+
+    height: 985px
+
+    display: flex
+    flex-direction: column
+    justify-content: end
+    align-items: center
+  &__subheading
+    padding-right: 104px
+    margin-bottom: 25px
+
+    text-align: center
+    color: $yellow
+    &::after
+      position: absolute
+      content: ""
+
+      top: 50%
+      right: 0
+      border-bottom: 2px solid
+      width: 72px
+  &__heading
+    text-align: center
+    font-weight: 700
+    font-size: 64px
+    line-height: 140%
+
+    width: 50%
+    margin-bottom: 27px
+  &__text
+    width: 65%
+    margin-bottom: 40px
+
+    text-align: center
+    font-weight: 600
+    line-height: 180%
+  a
+    margin-bottom: 42px
+
+.culture
+  padding-top: 225px
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-text
+    max-width: 630px
+    &__subheading
+      color: $yellow
+
+      margin-bottom: 27px
+    &__heading
+      font-size: 64px
+      font-weight: 700
+
+      margin-bottom: 27px
+    &__text
+      font-weight: 600
+      line-height: 180%
+
+      margin-bottom: 27px
+
+.footer
+  padding-top: 250px
+  &-upper
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    margin-bottom: 55px
+    &__logo
+      font-weight: 700
+      font-size: 48px
+    &__btn
+      padding: 24px 72px
+
+      text-align: center
+      color: $black
+      font-size: 17px
+      font-weight: 700
+
+      border: none
+      background-color: $orange
+      border-radius: 8px
+      &:hover
+        background-color: $light-orange
+    &-btn
+      &::before
+        content: 'Ready to explore?'
+        font-size: 22px
+        font-weight: 400
+
+        margin-right: 56px
+  hr
+    border: 2px solid rgba(255, 255, 255, 0.3)
+  &-lower
+    padding-top: 55px
+    padding-bottom: 130px
+
+    display: flex
+    justify-content: space-between
+    &-form
+      flex-grow: 1
+      &__subheading
+        max-width: 370px
+        font-size: 36px
+        font-weight: 700
+
+        margin-bottom: 50px
+      form
+        display: flex
+      &__email
+        background-color: $transparent
+        border: none
+        outline: none
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+
+        font-size: 25px
+
+        box-sizing: border-box
+        padding: 30px 10px 5px 10px
+
+        width: 330px
+        height: 70px
+      .label-type
+        display: inline
+        position: relative
+        &::before
+          position: absolute
+          top: 5px
+          left: 10px
+
+          content: 'Email address'
+
+          font-size: 15px
+          font-weight: 400px
+          color: rgba(255, 255, 255, .5)
+      &__submit
+        width: 70px
+        height: 70px
+        text-align: center
+
+        background-color: $orange
+        border-radius: 0 8px 8px 0
+        border: none
+        outline: none
+        color: $black
+        font-size: 10px
+        &:hover
+          background-color: $light-orange
+    &-uls
+      flex-grow: 2
+
+      display: flex
+      justify-content: space-around
+    &__ul
+      list-style-type: none
+      font-size: 19px
+      font-weight: 400
+      li
+        margin-bottom: 25px
+        &:first-child
+          font-size: 20px
+          color: $beige
+          font-weight: 700
+  &-text
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    margin-bottom: 160px
+    ul
+      list-style-type: none
+
+      display: flex
+      li
+        font-size: 15px
+        margin-right: 60px
+        i
+          font-size: 25px
+  &__copyright
+    margin-bottom: 118px
+
+    text-align: center
+    font-size: 18px
+    font-weight: 600
+    color: rgba(255, 255, 255, .5)
